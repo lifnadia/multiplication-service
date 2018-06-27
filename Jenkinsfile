@@ -38,7 +38,8 @@ pipeline {
     stage('push') {
       steps {
         sh '''docker login -u lifnadia -p lifnadia29
-$ docker push lifnadia/multiplication-service:latest
+docker push lifnadia/multiplication-service:latest
+
 '''
       }
     }
